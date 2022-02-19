@@ -12493,8 +12493,13 @@ button {
 }
 @media (max-width: 767px) {
   .hero-info {
-    margin-top: 80px;
+    margin-top: 150px;
   }
+  .whyus ul li {
+    display: block !important;
+    text-align: left !important;
+    margin-right: 10px !important;
+}
 }
 
 .hero-02-text {
