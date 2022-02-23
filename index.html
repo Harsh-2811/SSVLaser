@@ -14,6 +14,10 @@
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- CSS here -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -45,6 +49,8 @@
         vertical-align: middle;
 
     }
+
+   
         </style>
     </head>
     <body>
@@ -314,6 +320,35 @@
                 </div>
             </div>
             <!-- service-area-end -->
+
+
+            <div id="projectFacts" class="sectionClass">
+                <div class="fullWidth eight columns">
+                    <div class="projectFactsWrap ">
+                        
+                        <div class="item wow fadeInUpBig animated animated" data-number="45" style="visibility: visible;">
+                            <i class="fas fa-users"></i>
+                            <p id="number1" class="number my-3">45</p>
+                            <span></span>
+                            <p>Productive Staff</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="17" style="visibility: visible;">
+                            <i class="fas fa-cogs"></i>
+                            <p id="number2" class="number my-3">17</p>
+                            <span></span>
+                            <p>Latest Laser Machines</p>
+                        </div>
+                        <div class="item wow fadeInUpBig animated animated" data-number="200" style="visibility: visible;">
+                            <i class="fas fa-smile"></i>
+                            <p id="number3" class="number my-3">200 +</p>
+                            <span></span>
+                            <p>Happy Clients</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
 
             <!-- case start  -->
             <div class="case-area grey-bg pt-115 pb-120" id="machinesdiv">
@@ -831,9 +866,9 @@
                                     <h3 class="footer-title">Services</h3>
                                     <div class="footer-link">
                                         <ul>
+                                            <li><a style="cursor: pointer;color: #fff;" >Waterjet Sawing</a></li>
                                             <li><a style="cursor: pointer;color: #fff;" >Fiber Sawing</a></li>
                                             <li><a style="cursor: pointer;color: #fff;" >Green Sawing</a></li>
-                                            <li><a style="cursor: pointer;color: #fff;" >Waterjet Sawing</a></li>
                                             <li><a style="cursor: pointer;color: #fff;" >Fancy 4P - All Shape Natural & Lab Grone</a></li>
                                             <li><a style="cursor: pointer;color: #fff;" >Round Shape Natural & Lab Grone</a></li>
                                         </ul>
@@ -863,15 +898,7 @@
                                     <h3 class="footer-title">We are open at</h3>
                                     <div class="footer-link">
                                         <ul>
-                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Mon - 9:00 AM to 8:00 PM </a></li>
-                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Tue - 9:00 AM to 8:00 PM </a></li>
-                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Wed - 9:00 AM to 8:00 PM </a></li>
-                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Thu - 9:00 AM to 8:00 PM </a></li>
-                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Fri - 9:00 AM to 8:00 PM </a></li>
-                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Sat - 9:00 AM to 8:00 PM </a></li>
-
-                                        
-
+                                            <li><a style="cursor: pointer;color: #fff;" ><i class="fas fa-clock mr-2" style="color:#fff"></i> Mon to Sat(9:00 AM to 8:00 PM)</a></li>
                                         </ul>
                                      </div>
                                  </div>
@@ -885,7 +912,7 @@
 
         </footer>
         <!-- footer-area-end -->
-
+       
 
 
 		<!-- JS here -->
@@ -908,6 +935,49 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+
+
+$.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+
+
+// $('#number1').jQuerySimpleCounter({end: 45,duration: 3000});
+// $('#number2').jQuerySimpleCounter({end: 17,duration: 3000});
+// $('#number3').jQuerySimpleCounter({end: 200,duration: 2000});
+
+
+
+
+  	/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+  
+
+            </script>
     </body>
 
 <!-- Mirrored from www.devsnews.com/template/carly/carly/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Feb 2022 04:42:06 GMT -->

@@ -80,3 +80,9 @@
 
 
 }
+
+@media (max-width: 820px){
+    .menu-bg .logo img {
+        max-width: 90px;
+    }
+}
