@@ -29,6 +29,10 @@
         <link rel="stylesheet" href="assets/css/default.html">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
         <style>
             
 
@@ -49,7 +53,37 @@
         vertical-align: middle;
 
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
 
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
    
         </style>
     </head>
@@ -110,13 +144,13 @@
                 <div class="hero-slider">
                     <div class="slider-active">
                         <div class="single-slider slider-height d-flex align-items-center"
-                            style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url('assets/img/slider/diamond_background.jpg');">
+                            style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url('assets/img/slider/laser_background.jpg');">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12">
                                         <div class="hero-text hero-info">
                                             <div class="hero-slider-caption ">
-                                                <h4 data-animation="fadeInUp" data-delay=".2s" style="color: #f9a90a;">Shree Sidhhivinayak Laser </h4>
+                                                <h4 data-animation="fadeInUp" data-delay=".2s" style="color: #f9a90a;font-size: 2rem;">Shree Sidhhivinayak Laser </h4>
                                                 <h2 data-animation="fadeInUp" data-delay=".4s">Laser Diamond Cutting & Green Sawing Job Works</h2>
                                             </div>
                                             <div class="whyus">
@@ -148,10 +182,10 @@
                         <div class="col-xl-6 col-lg-6">
                             <div class="about-us-img pos-rel mb-30">
                                 <div class="ab-image fix">
-                                    <img src="assets/img/about/diamond_about.jpg" alt="">
+                                    <img src="assets/img/about/about.jpg" alt="">
                                 </div>
                                 <div class="about-info">
-                                    <h2>9</h2>
+                                    <h2 style="    color: rgb(249, 169, 10);">9</h2>
                                     <h5>years of <br> experience</h5>
                                 </div>
                             </div>
@@ -326,19 +360,19 @@
                 <div class="fullWidth eight columns">
                     <div class="projectFactsWrap ">
                         
-                        <div class="item wow fadeInUpBig animated animated" data-number="45" style="visibility: visible;">
+                        <div class="item wow  animated animated" data-number="45" style="visibility: visible;">
                             <i class="fas fa-users"></i>
                             <p id="number1" class="number my-3">45</p>
                             <span></span>
                             <p>Productive Staff</p>
                         </div>
-                        <div class="item wow fadeInUpBig animated animated" data-number="17" style="visibility: visible;">
+                        <div class="item wow  animated animated" data-number="17" style="visibility: visible;">
                             <i class="fas fa-cogs"></i>
                             <p id="number2" class="number my-3">17</p>
                             <span></span>
                             <p>Latest Machines</p>
                         </div>
-                        <div class="item wow fadeInUpBig animated animated" data-number="200" style="visibility: visible;">
+                        <div class="item wow  animated animated" data-number="200" style="visibility: visible;">
                             <i class="fas fa-smile"></i>
                             <p id="number3" class="number my-3">200 +</p>
                             <span></span>
@@ -363,11 +397,11 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row case-active">
+                    <!-- <div class="row case-active">
                         <div class="col-xl-4">
                             <div class="case-wrap">
                                 <div class="case-thumb">
-                                    <img src="assets/img/case/case1.jpg" alt="">
+                                    <img src="assets/img/slider/Machine_1.jpg" alt="">
                                 </div>
                                
                             </div>
@@ -375,7 +409,8 @@
                         <div class="col-xl-4">
                             <div class="case-wrap">
                                 <div class="case-thumb">
-                                    <img src="assets/img/case/case1.jpg" alt="">
+                                                                        <img src="assets/img/slider/Machine_1.jpg" alt="">
+
                                 </div>
                                
                             </div>
@@ -383,7 +418,8 @@
                         <div class="col-xl-4">
                             <div class="case-wrap">
                                 <div class="case-thumb">
-                                    <img src="assets/img/case/case1.jpg" alt="">
+                                                                        <img src="assets/img/slider/Machine_2.jpg" alt="">
+
                                 </div>
                                 
                             </div>
@@ -391,7 +427,8 @@
                         <div class="col-xl-4">
                             <div class="case-wrap">
                                 <div class="case-thumb">
-                                    <img src="assets/img/case/case1.jpg" alt="">
+                                                                        <img src="assets/img/slider/Machine_3.jpg" alt="">
+
                                 </div>
                                 
                             </div>
@@ -399,11 +436,107 @@
                         <div class="col-xl-4">
                             <div class="case-wrap">
                                 <div class="case-thumb">
-                                    <img src="assets/img/case/case1.jpg" alt="">
+                                                                        <img src="assets/img/slider/Machine_4.jpg" alt="">
+
                                 </div>
                               
                             </div>
                         </div>
+
+                        <div class="col-xl-4">
+                            <div class="case-wrap">
+                                <div class="case-thumb">
+                                                                        <img src="assets/img/slider/Machine_5.jpg" alt="">
+
+                                </div>
+                              
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <div class="case-wrap">
+                                <div class="case-thumb">
+                                                                        <img src="assets/img/slider/Machine_6.jpg" alt="">
+
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="assets/img/slider/Machine_1.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/slider/Machine_2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/slider/Machine_3.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/slider/Machine_4.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/slider/Machine_5.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/slider/Machine_6.jpg" alt="">
+                          </div>
+                         
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+          
+            <div class="case-area grey-bg pb-120" id="machinesdiv">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+                            <div class="section-title text-center mb-90">
+                                <h5><span></span> Galary</h5>
+                                <h2>Our Work Area</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row case-active">
+                        <div class="col-xl-4">
+                            <div class="case-wrap">
+                                <div class="case-thumb">
+                                    <img src="assets/img/slider/Gallary_1.jpg" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="case-wrap">
+                                <div class="case-thumb">
+                                    <img src="assets/img/slider/Gallary_2.jpg" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="case-wrap">
+                                <div class="case-thumb">
+                                    <img src="assets/img/slider/Gallary_3.jpg" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="case-wrap">
+                                <div class="case-thumb">
+                                    <img src="assets/img/slider/Gallary_4.jpg" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -977,6 +1110,37 @@ $.fn.jQuerySimpleCounter = function( options ) {
         });
   
 
+            </script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
             </script>
     </body>
 
